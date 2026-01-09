@@ -66,8 +66,7 @@ main {
 }
 
 .main__botones--color1 {
-        font-weight: 800;
-
+    font-weight: 800;
     background-color: #13ec5b;
 }
 
@@ -90,6 +89,7 @@ main {
     font-weight: 800;
     color: white;
     border: 1px solid #3e3e3e;
+    text-align: center;
 }
 
 .main__botones--color2:hover {
