@@ -1,11 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_balance_wallet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <title>Alke Wallet</title>
 </head>
-<body>
-    <h1>este es el menu</h1>
+
+<body class="dark">
+
+
+    <div class="layout">
+
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <div class="brand">
+                    <div class="header__icono">
+                        <span class="material-symbols-outlined">
+                            account_balance_wallet
+                        </span>
+                    </div>
+                    <div>
+                        <h1>Alke Wallet</h1>
+                        <p>Gestión segura de activos</p>
+                    </div>
+                </div>
+
+
+                <nav class="menu">
+                    <a class="" href="#">Dashboard</a>
+                    <a href="#" class="active">Wallet</a>
+                    <a href="#">Transacciones</a>
+                    <a href="#">Seguridad</a>
+                </nav>
+            </div>
+
+
+            <div class="sidebar-bottom">
+                <a href="#">Opciones</a>
+            </div>
+        </aside>
+
+
+        <!-- Main -->
+        <main class="content">
+
+
+            <!-- Header -->
+            <header class="topbar">
+                <h2>Wallet</h2>
+
+
+                <div class="search">
+                    <span>Buscar</span>
+                    <input type="text" placeholder="Buscar Transacciones...">
+                </div>
+            </header>
+
+
+            <!-- Cards -->
+            <section class="cards">
+                <div class="card">
+                    <p class="label">Balance Total</p>
+                    <h3>$12,450.00</h3>
+                    <span class="badge positive">+2.5%</span>
+                </div>
+
+
+                <div class="card">
+                    <p class="label">Ingresos Mensuales</p>
+                    <h3>$3,200.00</h3>
+                    <span class="badge neutral">0.0%</span>
+                </div>
+
+
+                <div class="card">
+                    <p class="label">Gastos Mensuales</p>
+                    <h3>$1,150.00</h3>
+                    <span class="badge negative">-5.4%</span>
+                </div>
+            </section>
+            <!-- Actions -->
+            <section class="actions">
+                <h3>Acciones Rapidas</h3>
+                <div class="action-box">
+                    <p>Necesitas mover fondos?</p>
+                    <div class="buttons">
+                        <button class="primary">Depositar</button>
+                        <button class="secondary">Enviar Dinero</button>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Table -->
+            <section class="table-section">
+                <h3>Transacciones Recientes</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Entidad</th>
+                            <th>Categoria</th>
+                            <th>Fecha</th>
+                            <th class="right">Monto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tienda Apple</td>
+                            <td>Tecnologia</td>
+                            <td>Oct 24, 2023</td>
+                            <td class="right negative">-$999.00</td>
+                        </tr>
+                        <tr>
+                            <td>Salario Mensual</td>
+                            <td>Entrada</td>
+                            <td>Oct 20, 2023</td>
+                            <td class="right positive">+$3,200.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+
+        </main>
+    </div>
+
+
 </body>
+
 </html>
