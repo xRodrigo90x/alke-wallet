@@ -13,7 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/transacciones.css">
     <title>Alke Wallet</title>
 </head>
 
@@ -41,8 +41,8 @@
 
                 <nav class="menu">
                     <a class="" href="#">Dashboard</a>
-                    <a href="#" class="active">Wallet</a>
-                    <a href="transaccion.html">Transacciones</a>
+                    <a href="menu.html">Wallet</a>
+                    <a href="#" class="active">Transacciones</a>
                     <a href="#">Seguridad</a>
                 </nav>
             </div>
@@ -60,7 +60,7 @@
 
             <!-- Header -->
             <header class="topbar">
-                <h2>Wallet</h2>
+                <h2>Transacciones</h2>
 
 
                 <div class="search">
@@ -69,71 +69,64 @@
                 </div>
             </header>
 
+    
+            <section class="content">
+                <section class="heading">
+                    <h2>Transacciones Recientes</h2>
+                    <p>Gestiona y revisa tus últimos movimientos financieros</p>
+                </section>
 
-            <!-- Cards -->
-            <section class="cards">
-                <div class="card">
-                    <p class="label">Balance Total</p>
-                    <h3>$12,450.00</h3>
-                    <span class="badge positive">+2.5%</span>
-                </div>
+                <section class="filters">
+                    <input type="text" placeholder="Buscar por descripción o referencia">
 
+                    <select>
+                        <option>Todos los tipos</option>
+                        <option>Ingresos</option>
+                        <option>Gastos</option>
+                    </select>
 
-                <div class="card">
-                    <p class="label">Ingresos Mensuales</p>
-                    <h3>$3,200.00</h3>
-                    <span class="badge neutral">0.0%</span>
-                </div>
+                    <select>
+                        <option>Últimos 30 días</option>
+                        <option>Últimos 7 días</option>
+                        <option>Últimos 3 meses</option>
+                    </select>
+                </section>
 
-
-                <div class="card">
-                    <p class="label">Gastos Mensuales</p>
-                    <h3>$1,150.00</h3>
-                    <span class="badge negative">-5.4%</span>
-                </div>
-            </section>
-            <!-- Actions -->
-            <section class="actions">
-                <h3>Acciones Rapidas</h3>
-                <div class="action-box">
-                    <p>Necesitas mover fondos?</p>
-                    <div class="buttons">
-                        <button class="primary">Depositar</button>
-                        <button class="secondary">Enviar Dinero</button>
-                    </div>
-                </div>
-            </section>
-
-
-            <!-- Table -->
-            <section class="table-section">
-                <h3>Transacciones Recientes</h3>
                 <table>
                     <thead>
                         <tr>
-                            <th>Entidad</th>
-                            <th>Categoria</th>
                             <th>Fecha</th>
+                            <th>Descripción</th>
+                            <th>Categoría</th>
+                            <th>Estado</th>
                             <th class="right">Monto</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Tienda Apple</td>
-                            <td>Tecnologia</td>
-                            <td>Oct 24, 2023</td>
-                            <td class="right negative">-$999.00</td>
+                            <td>24 Oct 2023</td>
+                            <td>Compra en tienda online</td>
+                            <td>Compras</td>
+                            <td class="ok">Completado</td>
+                            <td class="right negativo">- $124.50</td>
                         </tr>
                         <tr>
-                            <td>Salario Mensual</td>
-                            <td>Entrada</td>
-                            <td>Oct 20, 2023</td>
-                            <td class="right positive">+$3,200.00</td>
+                            <td>22 Oct 2023</td>
+                            <td>Depósito de sueldo</td>
+                            <td>Ingreso</td>
+                            <td class="ok">Completado</td>
+                            <td class="right positivo">+ $4.200</td>
+                        </tr>
+                        <tr>
+                            <td>21 Oct 2023</td>
+                            <td>Pago servicios básicos</td>
+                            <td>Cuentas</td>
+                            <td class="pendiente">Pendiente</td>
+                            <td class="right negativo">- $85.20</td>
                         </tr>
                     </tbody>
                 </table>
             </section>
-
 
         </main>
     </div>

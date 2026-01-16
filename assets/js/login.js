@@ -20,7 +20,6 @@ form.addEventListener("submit", (e) => {
 });
 
 ojoClick.addEventListener("click", () => {
-    contraseña.type =
     contraseña.type = contraseña.type === 'password' ? 'text' : 'password';
 
 })
