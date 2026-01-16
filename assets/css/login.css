@@ -82,6 +82,7 @@
     position: absolute;
     bottom: 11px;
     right: 17px;
+    cursor: pointer;
 }
 
 .form__botones {
